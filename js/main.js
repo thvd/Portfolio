@@ -22,10 +22,10 @@
 				});
 			});	
 
-			var url = 'http://maps.googleapis.com/maps/api/staticmap?center=Barneveld&zoom=10&size=' + width * 2 + 'x' + height * 2 + '&key=AIzaSyADpc4Hqul9KkwAhVtj8RbN-t14J6TOhp0&sensor=false&markers=Barneveld&scale=2';
+			var key = 'AIzaSyADpc4Hqul9KkwAhVtj8RbN-t14J6TOhp0';
+			var url = 'http://maps.googleapis.com/maps/api/staticmap?center=Barneveld&zoom=10&size=' + width * 2 + 'x' + height * 2 + '&key=' + key + '&sensor=false&markers=Barneveld&scale=2';
 			map.attr('src', url);
 			anchor.css('background-image', 'url(' + url + ')');
-
 		}).trigger('resize');
 	});
 }) (jQuery);
